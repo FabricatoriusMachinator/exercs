@@ -1,4 +1,3 @@
-import java.io.Console;
 import java.util.Scanner;
 
 public class secondsConverter {
@@ -8,10 +7,10 @@ public class secondsConverter {
         Scanner input = new Scanner(System.in);
 
 
-        System.out.println(timeConverter(input.nextLine()));
+        System.out.println(secondsConverter(input.nextLine()));
     }
 
-    private static String timeConverter(String in) {
+    private static String secondsConverter(String in) {
 
         double allSeconds = Double.parseDouble(in);
 
