@@ -40,14 +40,14 @@ public class linesIntersect {
                 a2x = a1x;
                 a1x = temp;
             }
-            if (b1x > b2x) {
-                temp = b2x;
-                b2x = b1x;
-                b1x = temp;
+            if (a1y > b2y) {
+                temp = b2y;
+                a2y = a1y;
+                a1y = temp;
             }
         }
 
-        if (b1x >  a2x || b2x > a1x || b1y > a2y || b2y > a1y){
+        if (b1x >  a2x || b2x < a1x || b1y > a2y || b2y < a1y){
             System.out.println("The lines don't intersect");
 
         }
